@@ -1,0 +1,76 @@
+extends junction_layout
+block content
+    //if lt IE 8
+      p.browserupgrade
+        | You are using an
+        strong outdated
+        |  browser. Please
+        a(href='http://browsehappy.com/') upgrade your browser
+        |  to improve your experience.
+    .menu
+        // Menu icon
+        .icon-close
+            img(src='images/close.png')
+        // Menu
+        ul
+            li
+                a(href='#') About
+            li
+                a(href='#') Blog
+            li
+                a(href='#') Help
+            li
+                a(href='#') Contact
+    .main
+        .header
+            .icon-menu
+                i.fa.fa-bars
+                |                     Menu
+            .container
+                ul
+                    li
+                        img(src='images/logo.svg')
+                    li About
+                    li Blog
+                    li Help
+                    li Contact
+        .jumbotron
+            .container
+                h1 Meet Junction
+        .supporting
+            .container
+                .row
+                    .col-md-4
+                        img(src='images/read.svg')
+                        h2 Read
+                        ul
+                            li Discover new stories and follow your favourite writers.
+                    .col-md-4
+                        img(src='images/write.svg')
+                        h2 Write
+                        ul
+                            li Create stories about our world, or entirely new worlds.
+                    .col-md-4
+                        img(src='images/talk.svg')
+                        h2 Talk
+                        ul
+                            li Join the conversation by talking with your favourite readers and your fans.
+                a.btn.btn-default(href='#', role='button') Start
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
+    script(src='/javascripts/main.js')
+    // Google Analytics: change UA-XXXXX-X to be your site's ID.
+    script.
+        (function (b, o, i, l, e, r) {
+            b.GoogleAnalyticsObject = l;
+            b[l] || (b[l] =
+                    function () {
+                        (b[l].q = b[l].q || []).push(arguments)
+                    });
+            b[l].l = +new Date;
+            e = o.createElement(i);
+            r = o.getElementsByTagName(i)[0];
+            e.src = 'https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e, r)
+        }(window, document, 'script', 'ga'));
+        ga('create', 'UA-XXXXX-X', 'auto');ga('send', 'pageview');
